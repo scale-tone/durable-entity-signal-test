@@ -1,0 +1,17 @@
+{
+    "bindings": [
+        {
+            "name": "myTimer",
+            "type": "timerTrigger",
+            "direction": "in",
+            "schedule": "0 0 * */1 * *",
+            "runOnStartup": true
+        },
+        {
+            "name": "starter",
+            "type": "orchestrationClient",
+            "direction": "in"
+        }
+    ],
+    "scriptFile": "../dist/TimerTrigger/index.js"
+}
